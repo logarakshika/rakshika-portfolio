@@ -4279,3 +4279,118 @@ h6 {
 .project-card:hover .project-preview-image {
   transform: scale(1.04);
 }
+
+/* Contact section alignment fix */
+.contact-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section .contact-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-section .contact-title,
+.contact-section .contact-description,
+.contact-section .contact-email,
+.contact-section .contact-actions,
+.contact-section .contact-bottom {
+  text-align: left;
+}
+
+.contact-section .contact-title {
+  max-width: 100%;
+}
+
+.contact-section .contact-description {
+  max-width: 560px;
+}
+
+.contact-section .contact-actions,
+.contact-section .contact-bottom {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Contact section — consistent left alignment */
+.contact-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section .contact-container {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.contact-section .contact-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.contact-section .contact-content {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  text-align: left;
+}
+
+.contact-section .contact-content h2,
+.contact-section .contact-description,
+.contact-section .contact-email {
+  text-align: left;
+}
+
+.contact-section .contact-description {
+  max-width: 560px;
+}
+
+.contact-section .contact-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  box-sizing: border-box;
+}
+
+.contact-section .contact-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .contact-section .contact-header {
+    gap: 24px;
+  }
+
+  .contact-section .contact-links {
+    gap: 20px;
+  }
+
+  .contact-section .contact-footer {
+    justify-content: space-between;
+  }
+}
