@@ -889,9 +889,7 @@ body {
 
 .skills-section {
   position: relative;
-
   width: 100%;
-  min-height: 100vh;
 
   padding:
     120px
@@ -899,16 +897,8 @@ body {
     80px;
 
   background: #f7f2ef;
-
   color: #1b080a;
 }
-
-.skills-container {
-  width: 100%;
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
 
 /* =========================================
    HEADER
