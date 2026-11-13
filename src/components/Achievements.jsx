@@ -10,7 +10,7 @@ export default function Achievements() {
     },
     {
       number: "02",
-      title: "Special Mention + Awarded  ₹10,000",
+      title: "Special Mention · ₹10,000 Award",
       event: "TNWISE Hackathon",
       image: "/certificates/tnwise.png",
     },
@@ -38,16 +38,16 @@ export default function Achievements() {
         <div className="achievements-container">
 
           {/* HEADER */}
-          <div className="achievements-header">
+          <div className="achievements-header section-header">
 
-            <p className="achievements-label">
+            <p className="achievements-label section-label">
               05 — ACHIEVEMENTS
             </p>
 
-            <p className="achievements-side">
-              Milestones,
+            <p className="achievements-side section-side">
+              Pitching, competing,
               <br />
-              competitions & recognition.
+              and collaborating.
             </p>
 
           </div>
@@ -56,10 +56,10 @@ export default function Achievements() {
           {/* TITLE */}
           <div className="achievements-title">
 
-            <h2>
-              Moments that
+            <h2 className="section-title">
+              Recognised
               <br />
-              <span>made me proud.</span>
+              <span>for initiative.</span>
             </h2>
 
           </div>
@@ -109,17 +109,19 @@ export default function Achievements() {
                     {achievement.event}
                   </h4>
 
-                  <p className="achievement-detail">
-                    {achievement.detail}
-                  </p>
-
                 </div>
 
 
                 {/* ARROW */}
-                <div className="achievement-arrow">
+                <a
+                  className="achievement-arrow"
+                  href={achievement.image}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`View ${achievement.event} certificate`}
+                >
                   ↗
-                </div>
+                </a>
 
               </article>
 
@@ -127,15 +129,6 @@ export default function Achievements() {
 
           </div>
 
-
-          {/* FOOTER */}
-          <div className="achievements-bottom">
-
-            <p>
-              PARTICIPATE · PRESENT · BUILD · GROW
-            </p>
-
-          </div>
 
         </div>
 

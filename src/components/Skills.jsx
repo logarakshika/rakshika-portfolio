@@ -44,16 +44,16 @@ export default function Skills() {
 
         <div className="skills-container">
 
-          <div className="skills-header">
+          <div className="skills-header section-header">
 
-            <p className="skills-label">
+            <p className="skills-label section-label">
               02 — SKILLS
             </p>
 
-            <p className="skills-side">
-              Technologies I use
+            <p className="skills-side section-side">
+              A focused mix of
               <br />
-              to build and analyse.
+              software and data tools.
             </p>
 
           </div>
@@ -61,10 +61,10 @@ export default function Skills() {
 
           <div className="skills-title">
 
-            <h2>
-              Tools for
+            <h2 className="section-title">
+              A practical
               <br />
-              <span>building ideas.</span>
+              <span>toolkit.</span>
             </h2>
 
           </div>
@@ -118,14 +118,6 @@ export default function Skills() {
 
           </div>
 
-
-          <div className="skills-bottom">
-
-            <p>
-              LEARN · BUILD · ANALYSE · IMPROVE
-            </p>
-
-          </div>
 
         </div>
 

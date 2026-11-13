@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <main className="portfolio">
+      <a className="skip-link" href="#about">Skip to content</a>
 
       <section className="hero-page" id="home">
         <Navbar />

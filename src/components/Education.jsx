@@ -8,24 +8,19 @@ export default function Education() {
         <div className="education-container">
 
           {/* HEADER */}
-          <div className="education-header">
-            <p className="education-label">
+          <div className="education-header section-header">
+            <p className="education-label section-label">
               06 — EDUCATION
             </p>
 
-            <p className="education-side">
-              The foundation
-              <br />
-              behind my work.
-            </p>
           </div>
 
           {/* TITLE */}
           <div className="education-title">
-            <h2>
-              Learning,
+            <h2 className="section-title">
+              Grounded
               <br />
-              <span>growing & building.</span>
+              <span>in fundamentals.</span>
             </h2>
           </div>
 
@@ -50,13 +45,6 @@ export default function Education() {
                 S.A. Engineering College
               </p>
             </div>
-          </div>
-
-          {/* FOOTER */}
-          <div className="education-bottom">
-            <p>
-              LEARN · APPLY · BUILD
-            </p>
           </div>
 
         </div>

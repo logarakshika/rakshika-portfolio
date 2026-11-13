@@ -9,6 +9,11 @@ export default function ScrollReveal({ children, className = "" }) {
 
     if (!element) return;
 
+    if (!("IntersectionObserver" in window)) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -17,7 +22,8 @@ export default function ScrollReveal({ children, className = "" }) {
         }
       },
       {
-        threshold: 0.15,
+        threshold: 0.12,
+        rootMargin: "0px 0px -32px 0px",
       }
     );
 

@@ -9,7 +9,7 @@ export default function Projects() {
       category: "AI / DATA ANALYSIS",
       tech: "Python · AI/ML · Data Analysis · Real-Time Monitoring",
       description:
-        "A data-driven monitoring system focused on identifying unusual patterns and supporting real-time analysis.",
+        "Uses data analysis to surface unusual patterns and support real-time monitoring.",
       image: "/projects/anomaly-guardian.png",
       github: "https://github.com/logarakshika/anomaly-guardian",
     },
@@ -20,7 +20,7 @@ export default function Projects() {
       category: "WEB DEVELOPMENT",
       tech: "HTML · CSS · JavaScript",
       description:
-        "A web project built using frontend technologies, focusing on a clean and user-friendly website experience.",
+        "A frontend project designed around a clear, easy-to-use browsing experience.",
       image: "/projects/azure-breeze.jpeg",
       github: "https://github.com/logarakshika/azure-breeze",
     },
@@ -31,7 +31,7 @@ export default function Projects() {
       category: "WEB APPLICATION",
       tech: "Python · Flask · MongoDB",
       description:
-        "A movie ticket booking system where users can register, log in, browse movies, select seats, and book tickets.",
+        "A Flask and MongoDB booking app for account access, movie browsing, seat selection, and ticket reservations.",
       image: "/projects/movie-registration.jpg",
       github: "https://github.com/logarakshika/Movie-registration",
     },
@@ -42,7 +42,7 @@ export default function Projects() {
       category: "ASSISTIVE TECHNOLOGY / IoT",
       tech: "ESP32 · 8 Push Buttons · Embedded Systems · Web Interface",
       description:
-        "A smart wearable communication glove developed by Team Strategix at S.A. Engineering College. It uses an ESP32 and 8 push buttons to help people with hearing and speech impairments communicate through predefined messages and a web interface.",
+        "A Team Strategix wearable prototype that uses an ESP32 and eight buttons to send preset messages through a web interface.",
       image: "/projects/hearit-sense.jpeg",
       github: "",
     },
@@ -53,7 +53,7 @@ export default function Projects() {
       category: "INTELLIGENT TRANSPORTATION",
       tech: "Data-Driven Systems · Intelligent Transportation · Urban Computing",
       description:
-        "A smart transportation system focused on analysing and optimising bus flow using data-driven approaches.",
+        "A data-led concept for analysing and improving bus movement in urban settings.",
       image: "/projects/thiralvizhi.jpeg",
       github: "",
     },
@@ -68,24 +68,24 @@ export default function Projects() {
         <div className="projects-container">
 
           {/* HEADER */}
-          <div className="projects-header">
-            <p className="projects-label">
+          <div className="projects-header section-header">
+            <p className="projects-label section-label">
               04 — PROJECTS
             </p>
 
-            <p className="projects-side">
-              Things I've built
+            <p className="projects-side section-side">
+              Selected work across
               <br />
-              and problems I've explored.
+              data, software, and access.
             </p>
           </div>
 
           {/* TITLE */}
           <div className="projects-title">
-            <h2>
-              Turning ideas
+            <h2 className="section-title">
+              Ideas put
               <br />
-              <span>into projects.</span>
+              <span>to work.</span>
             </h2>
           </div>
 
@@ -153,34 +153,18 @@ export default function Projects() {
                           rel="noopener noreferrer"
                           className="project-link"
                         >
-                          VIEW PROJECT ↗
-                        </a>
-
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="project-link secondary"
-                        >
-                          GITHUB ↗
+                          View on GitHub ↗
                         </a>
                       </>
                     ) : (
-                      <span className="project-link">
-                        PROJECT LINK COMING SOON
+                      <span className="project-link project-note">
+                        Team project
                       </span>
                     )}
                   </div>
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* FOOTER */}
-          <div className="projects-bottom">
-            <p>
-              BUILDING · TESTING · LEARNING
-            </p>
           </div>
 
         </div>

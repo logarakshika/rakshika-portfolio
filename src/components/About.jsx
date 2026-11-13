@@ -7,26 +7,24 @@ export default function About() {
         <div className="about-container">
 
           {/* HEADER */}
-          <div className="about-top">
-            <p className="about-label">
+          <div className="about-top section-header">
+            <p className="about-label section-label">
               01 — ABOUT ME
             </p>
 
-            <p className="about-side-text">
-              A little more about
+            <p className="about-side-text section-side">
+              What shapes
               <br />
-              the person behind
-              <br />
-              the projects.
+              my perspective.
             </p>
           </div>
 
           {/* MAIN TITLE */}
           <div className="about-title">
-            <h2>
-              Turning curiosity
+            <h2 className="section-title">
+              Curiosity,
               <br />
-              into <span>solutions.</span>
+              <span>made useful.</span>
             </h2>
           </div>
 
@@ -36,24 +34,15 @@ export default function About() {
             <div className="about-description">
 
               <p className="about-large-text">
-                I'm <strong>Logarakshika A</strong>, a
-                Computer Science and Business Systems
-                student with a growing interest in
-                Business Analysis, Data Analytics,
-                and technology-driven problem solving.
+                I'm <strong>Logarakshika A</strong>, a Computer Science and Business Systems student with an interest in business analysis and data.
               </p>
 
               <p>
-                My experience spans software development,
-                Python, SQL, AI/ML, web technologies,
-                and data-driven applications.
+                I work across Python, SQL, web development, and applied machine learning.
               </p>
 
               <p>
-                I enjoy understanding a problem from
-                both the technical and business
-                perspective and turning that understanding
-                into practical solutions.
+                I start with the problem, consider the people affected, and keep the outcome grounded in what will work.
               </p>
 
             </div>
@@ -123,19 +112,6 @@ export default function About() {
               </div>
 
             </div>
-
-          </div>
-
-          {/* BOTTOM LINE */}
-          <div className="about-bottom">
-
-            <p>
-              LEARNING · BUILDING · ANALYSING · CREATING
-            </p>
-
-            <span>
-              ↓
-            </span>
 
           </div>
 

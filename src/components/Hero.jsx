@@ -1,8 +1,21 @@
 export default function Hero() {
   return (
-    <div className="hero">
+    <div
+      className="hero"
+      onPointerMove={(event) => {
+        if (event.pointerType !== "mouse") return;
 
-      {/* BACKGROUND ACCENT */}
+        const bounds = event.currentTarget.getBoundingClientRect();
+        event.currentTarget.style.setProperty("--pointer-x", `${event.clientX - bounds.left}px`);
+        event.currentTarget.style.setProperty("--pointer-y", `${event.clientY - bounds.top}px`);
+      }}
+      onPointerLeave={(event) => {
+        event.currentTarget.style.setProperty("--pointer-x", "50%");
+        event.currentTarget.style.setProperty("--pointer-y", "50%");
+      }}
+    >
+
+      <div className="hero-atmosphere" aria-hidden="true" />
       <div className="hero-glow"></div>
 
       {/* IMAGE */}
@@ -11,8 +24,8 @@ export default function Hero() {
         <div className="hero-image-ring"></div>
 
         <img
-          src="/profile.png"
-          alt="Logarakshika A"
+          src="/profile-suit.png"
+          alt="Portrait of Logarakshika A"
           className="hero-profile-image"
         />
 
@@ -34,10 +47,8 @@ export default function Hero() {
         </h2>
 
         <p className="hero-description hero-reveal hero-reveal-4">
-          A CSBS student passionate about turning technology
-          and data into practical solutions, with interests
-          in business analysis, data analytics, and
-          intelligent applications.
+          I connect business questions with data and technology
+          to shape practical, human-centred solutions.
         </p>
 
         <div className="hero-actions hero-reveal hero-reveal-5">

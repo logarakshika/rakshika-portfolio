@@ -7,15 +7,15 @@ export default function Contact() {
         <div className="contact-container">
 
           {/* HEADER */}
-          <div className="contact-header">
-            <p className="contact-label">
+          <div className="contact-header section-header">
+            <p className="contact-label section-label">
               07 — CONTACT
             </p>
 
-            <p className="contact-side">
-              Let's build something
+            <p className="contact-side section-side">
+              Good work starts
               <br />
-              meaningful together.
+              with a clear conversation.
             </p>
           </div>
 
@@ -23,15 +23,13 @@ export default function Contact() {
           <div className="contact-content">
 
             <h2>
-              Have an idea?
+              Ready to
               <br />
-              <span>Let's talk.</span>
+              <span>contribute.</span>
             </h2>
 
             <p className="contact-description">
-              Whether it's a project, collaboration, internship
-              opportunity, or simply a conversation about technology
-              and business — I'd love to hear from you.
+              Open to analyst and technology roles, internships, and considered collaborations.
             </p>
 
             <a
@@ -74,8 +72,7 @@ export default function Contact() {
           {/* FOOTER */}
           <div className="contact-footer">
             <span>LOGARAKSHIKA A</span>
-            <span>ASPIRING BUSINESS ANALYST</span>
-            <span>© 2026</span>
+            <span>© {new Date().getFullYear()}</span>
           </div>
 
         </div>

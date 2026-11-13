@@ -8,8 +8,7 @@ export default function Experience() {
       company: "SkillCraft Technology",
       role: "Web Development Intern",
       period: "2025",
-      description:
-        "Worked on web development tasks involving responsive interfaces, frontend technologies, and practical application development.",
+      description: "Built responsive interfaces and strengthened practical frontend development skills.",
       image: "/certificates/skillcraft.jpg",
     },
     {
@@ -17,8 +16,7 @@ export default function Experience() {
       company: "CodeAlpha",
       role: "Backend Development Intern",
       period: "2025",
-      description:
-        "Worked on backend development concepts, server-side functionality, APIs, and application logic.",
+      description: "Explored server-side development, APIs, and application logic.",
       image: "/certificates/codealpha.jpg",
     },
     {
@@ -26,8 +24,7 @@ export default function Experience() {
       company: "Oasis Infobyte",
       role: "Java Development Intern",
       period: "2025",
-      description:
-        "Completed an internship focused on software development and programming through practical application-based tasks.",
+      description: "Applied Java programming concepts to hands-on software development tasks.",
       image: "/certificates/oasis-infobyte.jpg",
     },
     {
@@ -35,8 +32,7 @@ export default function Experience() {
       company: "The Developers Arena",
       role: "Python Development Intern",
       period: "2025",
-      description:
-        "Worked on programming projects and practical software development tasks while strengthening application development skills.",
+      description: "Used Python in practical programming projects and application development tasks.",
       image: "/certificates/developers-arena.jpg",
     },
   ];
@@ -45,20 +41,20 @@ export default function Experience() {
     <section className="experience-section" id="experience">
       <ScrollReveal>
         <div className="experience-container">
-          <div className="experience-header">
-            <p className="experience-label">03 — EXPERIENCE</p>
-            <p className="experience-side">
-              Learning through
+          <div className="experience-header section-header">
+            <p className="experience-label section-label">03 — EXPERIENCE</p>
+            <p className="experience-side section-side">
+              Early work across
               <br />
-              practical experience.
+              web, backend, and Python.
             </p>
           </div>
 
           <div className="experience-title">
-            <h2>
-              Experience that
+            <h2 className="section-title">
+              Learning by
               <br />
-              <span>shapes my journey.</span>
+              <span>doing the work.</span>
             </h2>
           </div>
 
@@ -110,9 +106,6 @@ export default function Experience() {
             ))}
           </div>
 
-          <div className="experience-bottom">
-            <p>EXPERIENCE · LEARNING · GROWTH</p>
-          </div>
         </div>
       </ScrollReveal>
     </section>
