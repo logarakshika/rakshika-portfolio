@@ -5,23 +5,23 @@ export default function Skills() {
   const skillGroups = [
     {
       number: "01",
-      title: "PROGRAMMING",
-      skills: ["Python", "Java", "C", "JavaScript"],
+      title: "DATA & DATABASES",
+      skills: ["Python", "SQL", "SQLite", "Data Analysis"],
     },
     {
       number: "02",
-      title: "DATA & DATABASES",
-      skills: ["SQL", "SQLite", "Data Analysis"],
-    },
-    {
-      number: "03",
-      title: "AI / ML",
+      title: "APPLIED AI / ML",
       skills: [
         "Scikit-learn",
         "TensorFlow",
         "Keras",
         "OpenCV",
       ],
+    },
+    {
+      number: "03",
+      title: "PROGRAMMING",
+      skills: ["Java", "C", "JavaScript"],
     },
     {
       number: "04",
